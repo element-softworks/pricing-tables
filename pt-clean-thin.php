@@ -5,7 +5,7 @@
 			<div class="col-md-4">
 				<div class="pt pt-slim">
 					<h1 class="pt-name">Starter</h1>
-					<h4 class="pt-price"><b>£5</b> / mo</h4>
+					<h4 class="pt-price"><b>£5</b> / month per user</h4>
 					<hr>
 					<div class="pt-tag">Perfect for devs</div>
 					<ul>

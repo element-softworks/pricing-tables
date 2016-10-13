@@ -13,6 +13,58 @@ h1.title {
   .bg.bg-grey {
     background-color: #333; }
 
+.animate, #color-picker, .animate:hover, #color-picker:hover, .animate:focus, #color-picker:focus, .animate:active, #color-picker:active {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.cp-red {
+  background-color: red; }
+
+.cp-blue {
+  background-color: #00a2ff; }
+
+.cp-green {
+  background-color: #1cbd9e; }
+
+.cp-gold {
+  background-color: gold; }
+
+#color-picker {
+  background-color: #333;
+  border: 1px solid #111;
+  padding: 13px 30px;
+  position: fixed;
+  height: 100px;
+  width: 200px;
+  top: 50px;
+  opacity: 0.5; }
+  #color-picker:hover {
+    opacity: 0.9; }
+  #color-picker .row > div {
+    padding: 5px;
+    text-align: center; }
+  #color-picker span {
+    font-weight: 100;
+    padding: 10px 0;
+    color: white; }
+  #color-picker .cp {
+    display: inline-block;
+    border-radius: 25px;
+    margin: 2px 5px;
+    cursor: pointer;
+    height: 25px;
+    width: 25px; }
+    #color-picker .cp.cp-red {
+      background-color: red; }
+    #color-picker .cp.cp-blue {
+      background-color: #00a2ff; }
+    #color-picker .cp.cp-green {
+      background-color: #1cbd9e; }
+    #color-picker .cp.cp-gold {
+      background-color: gold; }
+
 .pricing-tables.pt-slim, .pt.pt-slim {
   background-color: #fff;
   border: 1px solid #ccc;
@@ -58,5 +110,58 @@ h1.title {
     min-width: 80%;
     display: table;
     margin: 40px auto 20px; }
+.pricing-tables.pt-simple, .pt.pt-simple {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin: 40px 0; }
+  .pricing-tables.pt-simple .pt-name, .pricing-tables.pt-simple .pt-price, .pricing-tables.pt-simple .pt-tag, .pt.pt-simple .pt-name, .pt.pt-simple .pt-price, .pt.pt-simple .pt-tag {
+    text-align: center;
+    font-weight: 100; }
+  .pricing-tables.pt-simple .pt-name, .pt.pt-simple .pt-name {
+    padding-top: 40px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold; }
+  .pricing-tables.pt-simple .pt-price, .pt.pt-simple .pt-price {
+    text-transform: uppercase;
+    padding: 20px 0;
+    font-weight: bold;
+    opacity: 0.8;
+    color: #777; }
+    .pricing-tables.pt-simple .pt-price b, .pt.pt-simple .pt-price b {
+      color: #222;
+      font-size: 70px;
+      font-weight: 100; }
+    .pricing-tables.pt-simple .pt-price i, .pt.pt-simple .pt-price i {
+      vertical-align: top;
+      margin-top: 13px;
+      display: inline-block; }
+  .pricing-tables.pt-simple .pt-tag, .pt.pt-simple .pt-tag {
+    border: 1px solid #aaa;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 5px 15px;
+    margin: -35px auto 0;
+    display: table;
+    font-size: 12px; }
+  .pricing-tables.pt-simple hr, .pt.pt-simple hr {
+    margin-top: 25px;
+    border-top: 1px solid #ccc; }
+  .pricing-tables.pt-simple ul, .pt.pt-simple ul {
+    padding: 20px 0 0; }
+    .pricing-tables.pt-simple ul li, .pt.pt-simple ul li {
+      padding: 8px 0;
+      list-style-type: none;
+      text-align: center;
+      font-size: 16px; }
+  .pricing-tables.pt-simple .pt-btn, .pt.pt-simple .pt-btn {
+    border-radius: 3px;
+    border: 3px solid #aaa;
+    min-width: 70%;
+    display: table;
+    margin: 40px auto;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: bold; }
 
 /*# sourceMappingURL=style.css.map */

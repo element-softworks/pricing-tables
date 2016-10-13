@@ -2,12 +2,12 @@
 
 <div class="container">
 	<h1 class="title">Clean Thin Pricing Table</h1>
-	<?php require("standard.php"); ?>
+	<?php require("pt-clean-thin.php"); ?>
 </div>
 
 <div class="bg bg-grey">
 	<div class="container">
-		<?php require("standard.php"); ?>
+		<?php require("pt-simple.php"); ?>
 	</div>
 </div>
 

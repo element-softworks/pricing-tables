@@ -17,6 +17,72 @@ h1.title {
 	}
 }
 
+.animate, .animate:hover, .animate:focus, .animate:active {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.cp-red {
+	background-color: red;
+}
+.cp-blue {
+	background-color: #00a2ff;
+}
+.cp-green {
+	background-color: #1cbd9e;
+}
+.cp-gold {
+	background-color: gold;
+}
+
+#color-picker {
+	background-color: #333;
+	border: 1px solid #111;
+	padding: 13px 30px;
+	position: fixed;
+	height: 100px;
+	width: 200px;
+	top: 50px;
+	opacity: 0.5;
+	@extend .animate;
+
+	&:hover {
+		opacity: 0.9;
+	}
+	.row > div {
+		padding: 5px;
+		text-align: center;
+	}
+	span {
+		font-weight: 100;
+		padding: 10px 0;
+		color: white;
+	}
+	.cp {
+		display: inline-block;
+		border-radius: 25px;
+		margin: 2px 5px;
+		cursor: pointer;
+		height: 25px;
+		width: 25px;
+
+		&.cp-red {
+			background-color: red;
+		}
+		&.cp-blue {
+			background-color: #00a2ff;
+		}
+		&.cp-green {
+			background-color: #1cbd9e;
+		}
+		&.cp-gold {
+			background-color: gold;
+		}
+	}
+}
+
 .pricing-tables, .pt {
 	&.pt-slim {
 		background-color: #fff;
@@ -79,6 +145,77 @@ h1.title {
 			min-width: 80%;
 			display: table;
 			margin: 40px auto 20px;
+		}
+	}
+
+	&.pt-simple {
+		background-color: #fff;
+		border: 1px solid #ccc;
+		margin: 40px 0;
+
+		.pt-name, .pt-price, .pt-tag {
+			text-align: center;
+			font-weight: 100;
+		}
+
+		.pt-name {
+			padding-top: 40px;
+			font-size: 20px;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+		.pt-price {
+			text-transform: uppercase;
+			padding: 20px 0;
+			font-weight: bold;
+			opacity: 0.8;
+			color: #777;
+
+			b {
+				color: #222;
+				font-size: 70px;
+				font-weight: 100;
+			}
+			i {
+				vertical-align: top;
+				margin-top: 13px;
+				display: inline-block;
+			}
+		}
+		.pt-tag {
+			border: 1px solid #aaa;
+			background-color: #fff;
+			border-radius: 15px;
+			padding: 5px 15px;
+			margin: -35px auto 0;
+			display: table;
+			font-size: 12px;
+		}
+
+		hr {
+			margin-top: 25px;
+			border-top: 1px solid #ccc;
+		}
+
+		ul {
+			padding: 20px 0 0;
+			li {
+				padding: 8px 0;
+				list-style-type: none;
+				text-align: center;
+				font-size: 16px;
+			}
+		}
+
+		.pt-btn {
+			border-radius: 3px;
+			border: 3px solid #aaa;
+			min-width: 70%;
+			display: table;
+			margin: 40px auto;
+			padding: 15px 20px;
+			text-transform: uppercase;
+			font-weight: bold;
 		}
 	}
 }
