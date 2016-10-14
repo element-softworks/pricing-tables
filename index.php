@@ -1,14 +1,23 @@
 <?php require_once("assets/header.php"); ?>
 
-<div class="container">
+<div class="bg"><div class="container">
 	<h1 class="title">Clean Thin Pricing Table</h1>
 	<?php require("pt-clean-thin.php"); ?>
-</div>
+</div></div>
 
-<div class="bg bg-grey">
-	<div class="container">
-		<?php require("pt-simple.php"); ?>
-	</div>
-</div>
+<div class="bg bg-grey"><div class="container">
+	<h1 class="title">Simple Tile Pricing Table</h1>
+	<?php require("pt-simple.php"); ?>
+</div></div>
+
+<div class="bg"><div class="container">
+	<h1 class="title">Minimal Pricing Table</h1>
+	<?php require("pt-minimal.php"); ?>
+</div></div>
+
+<div class="bg bg-grey"><div class="container">
+	<h1 class="title">Card Pricing Table</h1>
+	<?php require("pt-card.php"); ?>
+</div></div>
 
 <?php require_once("assets/footer.php"); ?>

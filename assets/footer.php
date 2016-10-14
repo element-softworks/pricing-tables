@@ -5,10 +5,10 @@
 						<span>Pick a color</span>
 					</div>
 					<div class="col-md-12">
-						<div class="cp cp-red"   id="cp-red"></div>
-						<div class="cp cp-blue"  id="cp-blue"></div>
-						<div class="cp cp-green" id="cp-green"></div>
-						<div class="cp cp-gold"  id="cp-gold"></div>
+						<div class="cp cp-red"    id="cp-red"></div>
+						<div class="cp cp-blue"   id="cp-blue"></div>
+						<div class="cp cp-green"  id="cp-green"></div>
+						<div class="cp cp-purple" id="cp-purple"></div>
 					</div>
 				</div>
 			</div>

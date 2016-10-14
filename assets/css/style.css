@@ -12,15 +12,17 @@ h1.title {
   padding: 40px 0; }
   .bg.bg-grey {
     background-color: #333; }
+    .bg.bg-grey h1.title {
+      color: white; }
 
-.animate, #color-picker, .animate:hover, #color-picker:hover, .animate:focus, #color-picker:focus, .animate:active, #color-picker:active {
+.animate, #color-picker, .pricing-tables.pt-card .pt-header, .pt.pt-card .pt-header, .animate:hover, #color-picker:hover, .pricing-tables.pt-card .pt-header:hover, .pt.pt-card .pt-header:hover, .animate:focus, #color-picker:focus, .pricing-tables.pt-card .pt-header:focus, .pt.pt-card .pt-header:focus, .animate:active, #color-picker:active, .pricing-tables.pt-card .pt-header:active, .pt.pt-card .pt-header:active {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out; }
 
 .cp-red {
-  background-color: red; }
+  background-color: #dd4e4a; }
 
 .cp-blue {
   background-color: #00a2ff; }
@@ -28,20 +30,33 @@ h1.title {
 .cp-green {
   background-color: #1cbd9e; }
 
-.cp-gold {
-  background-color: gold; }
+.cp-purple {
+  background-color: #5e6a9a; }
+
+.cp-red-before li:before {
+  color: #dd4e4a !important; }
+
+.cp-blue-before li:before {
+  color: #00a2ff !important; }
+
+.cp-green-before li:before {
+  color: #1cbd9e !important; }
+
+.cp-purple-before li:before {
+  color: #5e6a9a !important; }
 
 #color-picker {
   background-color: #333;
-  border: 1px solid #111;
+  border: 3px solid #111;
   padding: 13px 30px;
   position: fixed;
   height: 100px;
   width: 200px;
   top: 50px;
-  opacity: 0.5; }
+  opacity: 0.7;
+  left: -3px; }
   #color-picker:hover {
-    opacity: 0.9; }
+    opacity: 1; }
   #color-picker .row > div {
     padding: 5px;
     text-align: center; }
@@ -56,14 +71,6 @@ h1.title {
     cursor: pointer;
     height: 25px;
     width: 25px; }
-    #color-picker .cp.cp-red {
-      background-color: red; }
-    #color-picker .cp.cp-blue {
-      background-color: #00a2ff; }
-    #color-picker .cp.cp-green {
-      background-color: #1cbd9e; }
-    #color-picker .cp.cp-gold {
-      background-color: gold; }
 
 .pricing-tables.pt-slim, .pt.pt-slim {
   background-color: #fff;
@@ -155,6 +162,85 @@ h1.title {
       text-align: center;
       font-size: 16px; }
   .pricing-tables.pt-simple .pt-btn, .pt.pt-simple .pt-btn {
+    border-radius: 3px;
+    border: 3px solid #aaa;
+    min-width: 70%;
+    display: table;
+    margin: 40px auto;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    font-weight: bold; }
+.pricing-tables.pt-minimal, .pt.pt-minimal {
+  margin: 40px 0; }
+  .pricing-tables.pt-minimal .pt-name, .pricing-tables.pt-minimal .pt-price, .pricing-tables.pt-minimal .pt-tag, .pt.pt-minimal .pt-name, .pt.pt-minimal .pt-price, .pt.pt-minimal .pt-tag {
+    text-align: center;
+    font-weight: 100; }
+  .pricing-tables.pt-minimal .pt-tag, .pt.pt-minimal .pt-tag {
+    padding: 10px 0;
+    font-size: 50px; }
+  .pricing-tables.pt-minimal .pt-name, .pt.pt-minimal .pt-name {
+    text-transform: uppercase;
+    font-weight: bold; }
+  .pricing-tables.pt-minimal .pt-price, .pt.pt-minimal .pt-price {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px 0;
+    opacity: 0.8;
+    color: #777; }
+    .pricing-tables.pt-minimal .pt-price b, .pt.pt-minimal .pt-price b {
+      font-weight: bold;
+      font-size: 40px;
+      display: block;
+      color: #222; }
+  .pricing-tables.pt-minimal ul, .pt.pt-minimal ul {
+    padding: 20px 0 0; }
+    .pricing-tables.pt-minimal ul li, .pt.pt-minimal ul li {
+      padding: 12px 0;
+      list-style-type: none;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 100; }
+  .pricing-tables.pt-minimal .pt-btn, .pt.pt-minimal .pt-btn {
+    border-radius: 15px;
+    border: 1px solid #222;
+    background: #222;
+    color: #fff;
+    min-width: 60%;
+    display: table;
+    margin: 30px auto 20px; }
+.pricing-tables.pt-card, .pt.pt-card {
+  background-color: #fff;
+  margin: 40px 0;
+  padding: 0 0 1px; }
+  .pricing-tables.pt-card .pt-header, .pt.pt-card .pt-header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-weight: 100;
+    padding: 40px; }
+    .pricing-tables.pt-card .pt-header.pt-header-bike, .pt.pt-card .pt-header.pt-header-bike {
+      background: url("../img/bike.png") center;
+      background-size: 100%; }
+    .pricing-tables.pt-card .pt-header .pt-name, .pt.pt-card .pt-header .pt-name {
+      font-size: 52px; }
+    .pricing-tables.pt-card .pt-header .pt-price, .pt.pt-card .pt-header .pt-price {
+      text-transform: uppercase;
+      margin: 0;
+      font-weight: bold; }
+  .pricing-tables.pt-card:hover, .pt.pt-card:hover {
+    border: 20px; }
+    .pricing-tables.pt-card:hover .pt-header, .pt.pt-card:hover .pt-header {
+      background-size: 110%; }
+  .pricing-tables.pt-card hr, .pt.pt-card hr {
+    margin-top: 25px;
+    border-top: 1px solid #ccc; }
+  .pricing-tables.pt-card ul, .pt.pt-card ul {
+    padding: 40px 55px 0; }
+    .pricing-tables.pt-card ul li, .pt.pt-card ul li {
+      padding: 8px 0;
+      list-style-type: none;
+      font-size: 16px; }
+  .pricing-tables.pt-card .pt-btn, .pt.pt-card .pt-btn {
     border-radius: 3px;
     border: 3px solid #aaa;
     min-width: 70%;
