@@ -20,5 +20,8 @@ $( document ).ready(function() {
 		$(".color-border").css("border-color", color);
 		$(".color-text").css("color", color);
 		$(".color-before").removeClass("cp-red-before cp-blue-before cp-green-before cp-purple-before").addClass(id + "-before");
+
+
+		$(".color-bg-hover").removeClass("cp-red-hover cp-blue-hover cp-green-hover cp-purple-hover").addClass(id + "-hover");
 	});
 });

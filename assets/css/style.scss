@@ -66,6 +66,24 @@ h1.title {
 	}
 }
 
+.cp-red-hover:hover {
+	background: $red !important;
+	color: white !important;
+}
+.cp-blue-hover:hover {
+	background: $blue !important;
+	color: white !important;
+}
+.cp-green-hover:hover {
+	background: $green !important;
+	color: white !important;
+}
+.cp-purple-hover:hover {
+	background: $purple !important;
+	color: white !important;
+}
+
+
 
 #color-picker {
 	background-color: #333;
@@ -100,6 +118,10 @@ h1.title {
 		width: 25px;
 	}
 }
+
+
+
+
 
 .pricing-tables, .pt {
 	&.pt-slim {
@@ -307,6 +329,14 @@ h1.title {
 				background: url("../img/bike.png") center;
 				background-size: 100%;
 			}
+			&.pt-header-quad {
+				background: url("../img/quad.png") center;
+				background-size: 100%;
+			}
+			&.pt-header-motorbike {
+				background: url("../img/motorbike.png") center;
+				background-size: 100%;
+			}
 
 			@extend .animate;
 
@@ -350,6 +380,211 @@ h1.title {
 			padding: 15px 20px;
 			text-transform: uppercase;
 			font-weight: bold;
+
+			@extend .animate;
+
+			&:hover {
+				background: #aaa;
+				color: white;
+			}
+
+		}
+	}
+
+	&.pt-row {
+		background-color: #fff;
+		border: 1px solid #ddd;
+		margin: 5px 0;
+		padding: 20px;
+		border-radius: 5px;
+
+		.pt-header {
+			background-color: #333;
+			color: white;
+			text-align: center;
+			border-radius: 100px;
+			margin: 0 auto;
+			width: 60px;
+			height: 60px;
+
+			&.pt-header-bronze {
+				background-color: #965A38;
+			}
+			&.pt-header-silver {
+				background-color: #A8A8A8;
+			}
+			&.pt-header-gold {
+				background-color: #D9A441;
+			}
+			&.pt-header-platinum {
+				background-color: #965A38;
+			}
+			@extend .animate;
+
+			.pt-price {
+				text-transform: uppercase;
+				font-weight: 100;
+				padding: 16px 0;
+				margin: 0;
+			}
+		}
+
+		.pt-name {
+			text-transform: uppercase;
+			font-weight: bold;
+			margin: 2px 0 0;
+		}
+		&:hover {
+			.pt-header {
+				background-size: 110%;
+			}
+		}
+
+
+		hr {
+			margin-top: 25px;
+			border-top: 1px solid #ccc;
+		}
+
+		ul {
+			padding: 10px 10px 0;
+			li {
+				padding: 8px 0;
+				list-style-type: none;
+				font-size: 16px;
+			}
+		}
+
+		.pt-btn {
+			border-radius: 3px;
+			border: 2px solid #aaa;
+			min-width: 70%;
+			display: table;
+			margin: 7px auto;
+			padding: 10px 20px;
+			text-transform: uppercase;
+			font-weight: bold;
+			float: right;
+
+			@extend .animate;
+
+			&:hover {
+				background: #aaa;
+				color: white;
+			}
+
+		}
+	}
+
+	&.pt-unified {
+		background-color: #fff;
+		border: 1px solid #ccc;
+		margin: 40px 0;
+
+		.pt-name, .pt-price, .pt-tag {
+			text-align: center;
+			font-weight: 100;
+		}
+
+		.pt-name {
+			padding-top: 40px;
+			padding-bottom: 20px;
+			font-size: 20px;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+		.pt-price {
+			text-transform: uppercase;
+			font-weight: bold;
+			opacity: 0.8;
+			color: #777;
+			background: #ddd;
+			margin: auto;
+			display: table;
+			padding: 30px;
+			border-radius: 90px;
+
+			b {
+				color: #222;
+				font-size: 70px;
+				font-weight: 100;
+			}
+			i {
+				vertical-align: top;
+				margin-top: 13px;
+				display: inline-block;
+			}
+		}
+		.pt-tag {
+			border: 1px solid #aaa;
+			background-color: #fff;
+			border-radius: 15px;
+			padding: 5px 15px;
+			margin: -35px auto 0;
+			display: table;
+			font-size: 12px;
+		}
+
+		hr {
+			margin-top: 25px;
+			border-top: 1px solid #ccc;
+		}
+
+		ul {
+			padding: 20px 0 0;
+			li {
+				padding: 8px 0;
+				list-style-type: none;
+				text-align: center;
+				font-size: 16px;
+			}
+		}
+
+		.pt-btn {
+			border-radius: 3px;
+			border: 3px solid #aaa;
+			min-width: 70%;
+			display: table;
+			margin: 40px auto;
+			padding: 15px 20px;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+	}
+}
+
+.row {
+	&.row-unified {
+		> div:first-child {
+			padding-left: 30px;
+			padding-right: 0;
+			> .pt-unified {
+				border-top-left-radius: 10px;
+				border-bottom-left-radius: 10px;
+				margin-right: -1px;
+			}
+		}
+		> div:nth-child(2) {
+			padding-left: 0;
+			padding-right: 0;
+			> .pt-unified {
+				margin: 10px 0;
+				padding: 10px;
+				border-radius: 10px;
+
+				.pt-price {
+					margin: 20px auto;
+				}
+			}
+		}
+		> div:last-child {
+			padding-left: 0;
+			padding-right: 30px;
+			> .pt-unified {
+				border-top-right-radius: 10px;
+				border-bottom-right-radius: 10px;
+				margin-left: -1px;
+			}
 		}
 	}
 }
