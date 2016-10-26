@@ -387,6 +387,46 @@ h1.title {
     padding: 15px 20px;
     text-transform: uppercase;
     font-weight: bold; }
+.pricing-tables.pt-chart, .pt.pt-chart {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin: 40px 0; }
+  .pricing-tables.pt-chart > div, .pt.pt-chart > div {
+    padding: 0;
+    margin: -1px; }
+    .pricing-tables.pt-chart > div .list-group, .pt.pt-chart > div .list-group {
+      margin-bottom: 0; }
+      .pricing-tables.pt-chart > div .list-group .list-group-item, .pt.pt-chart > div .list-group .list-group-item {
+        border-radius: 0;
+        padding: 17px; }
+  .pricing-tables.pt-chart .pt-price, .pt.pt-chart .pt-price {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 20px 0;
+    opacity: 0.8;
+    color: #777; }
+    .pricing-tables.pt-chart .pt-price b, .pt.pt-chart .pt-price b {
+      font-weight: bold;
+      font-size: 40px;
+      display: block;
+      color: #222; }
+  .pricing-tables.pt-chart .pt-name, .pricing-tables.pt-chart .pt-price, .pricing-tables.pt-chart .pt-tag, .pt.pt-chart .pt-name, .pt.pt-chart .pt-price, .pt.pt-chart .pt-tag {
+    text-align: center;
+    font-weight: 100; }
+  .pricing-tables.pt-chart .pt-name, .pt.pt-chart .pt-name {
+    border-radius: 15px;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 12px; }
+  .pricing-tables.pt-chart .pt-btn, .pt.pt-chart .pt-btn {
+    border-radius: 3px;
+    border: 1px solid #aaa;
+    min-width: 70%;
+    display: table;
+    margin: 10px auto;
+    padding: 10px 5px;
+    text-transform: uppercase;
+    font-size: 10px; }
 
 .row.row-unified > div:first-child {
   padding-left: 30px;
