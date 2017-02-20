@@ -1,0 +1,63 @@
+&.pt-minimal {
+	margin: 40px 0;
+
+	.pt-name, .pt-price, .pt-tag {
+		text-align: center;
+		font-weight: 100;
+	}
+
+	.pt-tag {
+		padding: 10px 0;
+		font-size: 50px;
+	}
+
+	.pt-name {
+		text-transform: uppercase;
+		font-weight: bold;
+	}
+	.pt-price {
+		text-transform: uppercase;
+		font-weight: bold;
+		padding: 20px 0;
+		opacity: 0.8;
+		color: #777;
+
+		b {
+			font-weight: bold;
+			font-size: 40px;
+			display: block;
+			color: #222;
+		}
+	}
+
+	ul {
+		padding: 20px 0 0;
+		li {
+			padding: 12px 0;
+			list-style-type: none;
+			text-align: center;
+			font-size: 16px;
+			font-weight: 100;
+		}
+	}
+
+	.pt-btn {
+		border-radius: 15px;
+		border: 1px solid #222;
+		background: #222;
+		color: #fff;
+		min-width: 60%;
+		display: table;
+		margin: 30px auto 20px;
+	}
+
+	*[class*='pt-fade'] {
+		@extend .animate;
+	}
+
+	&:hover {
+		.pt-fade {
+			opacity: 1 !important;
+		}
+	}
+}

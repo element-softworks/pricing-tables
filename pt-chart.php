@@ -6,7 +6,7 @@
 			<div class="list-group-item">
 				<p class="list-group-item-text pt-name">starter</p>
 				<h4 class="list-group-item-heading pt-price">
-					<b class="color-text">£149</b>per month
+					<b class="color-text">£49</b>per month
 				</h4>
 				<div class="btn pt-btn color-bg color-border">Join Course</div>
 			</div>
@@ -27,7 +27,7 @@
 			<div class="list-group-item">
 				<p class="list-group-item-text pt-name">starter</p>
 				<h4 class="list-group-item-heading pt-price">
-					<b class="color-text">£149</b>per month
+					<b class="color-text">£85</b>per month
 				</h4>
 				<div class="btn pt-btn color-bg color-border">Join Course</div>
 			</div>

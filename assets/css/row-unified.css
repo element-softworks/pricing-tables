@@ -1,0 +1,25 @@
+.row.row-unified > div:first-child {
+  padding-left: 30px;
+  padding-right: 0; }
+  .row.row-unified > div:first-child > .pt-unified {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-right: -1px; }
+.row.row-unified > div:nth-child(2) {
+  padding-left: 0;
+  padding-right: 0; }
+  .row.row-unified > div:nth-child(2) > .pt-unified {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px; }
+    .row.row-unified > div:nth-child(2) > .pt-unified .pt-price {
+      margin: 20px auto; }
+.row.row-unified > div:last-child {
+  padding-left: 0;
+  padding-right: 30px; }
+  .row.row-unified > div:last-child > .pt-unified {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-left: -1px; }
+
+/*# sourceMappingURL=row-unified.css.map */

@@ -15,7 +15,7 @@ h1.title {
     .bg.bg-grey h1.title {
       color: white; }
 
-.animate, #color-picker, .pricing-tables.pt-card .pt-header, .pt.pt-card .pt-header, .pricing-tables.pt-card .pt-btn, .pt.pt-card .pt-btn, .pricing-tables.pt-row .pt-header, .pt.pt-row .pt-header, .pricing-tables.pt-row .pt-btn, .pt.pt-row .pt-btn, .animate:hover, #color-picker:hover, .pricing-tables.pt-card .pt-header:hover, .pt.pt-card .pt-header:hover, .pricing-tables.pt-card .pt-btn:hover, .pt.pt-card .pt-btn:hover, .pricing-tables.pt-row .pt-header:hover, .pt.pt-row .pt-header:hover, .pricing-tables.pt-row .pt-btn:hover, .pt.pt-row .pt-btn:hover, .animate:focus, #color-picker:focus, .pricing-tables.pt-card .pt-header:focus, .pt.pt-card .pt-header:focus, .pricing-tables.pt-card .pt-btn:focus, .pt.pt-card .pt-btn:focus, .pricing-tables.pt-row .pt-header:focus, .pt.pt-row .pt-header:focus, .pricing-tables.pt-row .pt-btn:focus, .pt.pt-row .pt-btn:focus, .animate:active, #color-picker:active, .pricing-tables.pt-card .pt-header:active, .pt.pt-card .pt-header:active, .pricing-tables.pt-card .pt-btn:active, .pt.pt-card .pt-btn:active, .pricing-tables.pt-row .pt-header:active, .pt.pt-row .pt-header:active, .pricing-tables.pt-row .pt-btn:active, .pt.pt-row .pt-btn:active {
+.animate, .color-bg-hover, #color-picker, .pricing-tables.pt-slim, .pt.pt-slim, .pricing-tables.pt-slim .pt-btn, .pt.pt-slim .pt-btn, .pricing-tables.pt-minimal *[class*='pt-fade'], .pt.pt-minimal *[class*='pt-fade'], .pricing-tables.pt-card .pt-header, .pt.pt-card .pt-header, .pricing-tables.pt-card .pt-btn, .pt.pt-card .pt-btn, .pricing-tables.pt-row .pt-header, .pt.pt-row .pt-header, .pricing-tables.pt-row .pt-btn, .pt.pt-row .pt-btn, .animate:hover, .color-bg-hover:hover, #color-picker:hover, .pricing-tables.pt-slim:hover, .pt.pt-slim:hover, .pricing-tables.pt-slim .pt-btn:hover, .pt.pt-slim .pt-btn:hover, .pricing-tables.pt-minimal [class*='pt-fade']:hover, .pt.pt-minimal [class*='pt-fade']:hover, .pricing-tables.pt-card .pt-header:hover, .pt.pt-card .pt-header:hover, .pricing-tables.pt-card .pt-btn:hover, .pt.pt-card .pt-btn:hover, .pricing-tables.pt-row .pt-header:hover, .pt.pt-row .pt-header:hover, .pricing-tables.pt-row .pt-btn:hover, .pt.pt-row .pt-btn:hover, .animate:focus, .color-bg-hover:focus, #color-picker:focus, .pricing-tables.pt-slim:focus, .pt.pt-slim:focus, .pricing-tables.pt-slim .pt-btn:focus, .pt.pt-slim .pt-btn:focus, .pricing-tables.pt-minimal [class*='pt-fade']:focus, .pt.pt-minimal [class*='pt-fade']:focus, .pricing-tables.pt-card .pt-header:focus, .pt.pt-card .pt-header:focus, .pricing-tables.pt-card .pt-btn:focus, .pt.pt-card .pt-btn:focus, .pricing-tables.pt-row .pt-header:focus, .pt.pt-row .pt-header:focus, .pricing-tables.pt-row .pt-btn:focus, .pt.pt-row .pt-btn:focus, .animate:active, .color-bg-hover:active, #color-picker:active, .pricing-tables.pt-slim:active, .pt.pt-slim:active, .pricing-tables.pt-slim .pt-btn:active, .pt.pt-slim .pt-btn:active, .pricing-tables.pt-minimal [class*='pt-fade']:active, .pt.pt-minimal [class*='pt-fade']:active, .pricing-tables.pt-card .pt-header:active, .pt.pt-card .pt-header:active, .pricing-tables.pt-card .pt-btn:active, .pt.pt-card .pt-btn:active, .pricing-tables.pt-row .pt-header:active, .pt.pt-row .pt-header:active, .pricing-tables.pt-row .pt-btn:active, .pt.pt-row .pt-btn:active {
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -44,6 +44,10 @@ h1.title {
 
 .cp-purple-before li:before {
   color: #5e6a9a !important; }
+
+.color-bg-hover:hover {
+  background: #333 !important;
+  color: white !important; }
 
 .cp-red-hover:hover {
   background: #dd4e4a !important;
@@ -133,6 +137,10 @@ h1.title {
     min-width: 80%;
     display: table;
     margin: 40px auto 20px; }
+    .pricing-tables.pt-slim .pt-btn:hover, .pt.pt-slim .pt-btn:hover {
+      background-color: #eee; }
+  .pricing-tables.pt-slim:hover, .pt.pt-slim:hover {
+    margin-top: 30px; }
 .pricing-tables.pt-simple, .pt.pt-simple {
   background-color: #fff;
   border: 1px solid #ccc;
@@ -224,6 +232,8 @@ h1.title {
     min-width: 60%;
     display: table;
     margin: 30px auto 20px; }
+  .pricing-tables.pt-minimal:hover .pt-fade, .pt.pt-minimal:hover .pt-fade {
+    opacity: 1 !important; }
 .pricing-tables.pt-card, .pt.pt-card {
   background-color: #fff;
   margin: 40px 0;
@@ -272,61 +282,6 @@ h1.title {
     text-transform: uppercase;
     font-weight: bold; }
     .pricing-tables.pt-card .pt-btn:hover, .pt.pt-card .pt-btn:hover {
-      background: #aaa;
-      color: white; }
-.pricing-tables.pt-row, .pt.pt-row {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  margin: 5px 0;
-  padding: 20px;
-  border-radius: 5px; }
-  .pricing-tables.pt-row .pt-header, .pt.pt-row .pt-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    border-radius: 100px;
-    margin: 0 auto;
-    width: 60px;
-    height: 60px; }
-    .pricing-tables.pt-row .pt-header.pt-header-bronze, .pt.pt-row .pt-header.pt-header-bronze {
-      background-color: #965A38; }
-    .pricing-tables.pt-row .pt-header.pt-header-silver, .pt.pt-row .pt-header.pt-header-silver {
-      background-color: #A8A8A8; }
-    .pricing-tables.pt-row .pt-header.pt-header-gold, .pt.pt-row .pt-header.pt-header-gold {
-      background-color: #D9A441; }
-    .pricing-tables.pt-row .pt-header.pt-header-platinum, .pt.pt-row .pt-header.pt-header-platinum {
-      background-color: #965A38; }
-    .pricing-tables.pt-row .pt-header .pt-price, .pt.pt-row .pt-header .pt-price {
-      text-transform: uppercase;
-      font-weight: 100;
-      padding: 16px 0;
-      margin: 0; }
-  .pricing-tables.pt-row .pt-name, .pt.pt-row .pt-name {
-    text-transform: uppercase;
-    font-weight: bold;
-    margin: 2px 0 0; }
-  .pricing-tables.pt-row:hover .pt-header, .pt.pt-row:hover .pt-header {
-    background-size: 110%; }
-  .pricing-tables.pt-row hr, .pt.pt-row hr {
-    margin-top: 25px;
-    border-top: 1px solid #ccc; }
-  .pricing-tables.pt-row ul, .pt.pt-row ul {
-    padding: 10px 10px 0; }
-    .pricing-tables.pt-row ul li, .pt.pt-row ul li {
-      padding: 8px 0;
-      list-style-type: none;
-      font-size: 16px; }
-  .pricing-tables.pt-row .pt-btn, .pt.pt-row .pt-btn {
-    border-radius: 3px;
-    border: 2px solid #aaa;
-    min-width: 70%;
-    display: table;
-    margin: 7px auto;
-    padding: 10px 20px;
-    text-transform: uppercase;
-    font-weight: bold;
-    float: right; }
-    .pricing-tables.pt-row .pt-btn:hover, .pt.pt-row .pt-btn:hover {
       background: #aaa;
       color: white; }
 .pricing-tables.pt-unified, .pt.pt-unified {
@@ -387,6 +342,61 @@ h1.title {
     padding: 15px 20px;
     text-transform: uppercase;
     font-weight: bold; }
+.pricing-tables.pt-row, .pt.pt-row {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  margin: 5px 0;
+  padding: 20px;
+  border-radius: 5px; }
+  .pricing-tables.pt-row .pt-header, .pt.pt-row .pt-header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-radius: 100px;
+    margin: 0 auto;
+    width: 60px;
+    height: 60px; }
+    .pricing-tables.pt-row .pt-header.pt-header-bronze, .pt.pt-row .pt-header.pt-header-bronze {
+      background-color: #965A38; }
+    .pricing-tables.pt-row .pt-header.pt-header-silver, .pt.pt-row .pt-header.pt-header-silver {
+      background-color: #A8A8A8; }
+    .pricing-tables.pt-row .pt-header.pt-header-gold, .pt.pt-row .pt-header.pt-header-gold {
+      background-color: #D9A441; }
+    .pricing-tables.pt-row .pt-header.pt-header-platinum, .pt.pt-row .pt-header.pt-header-platinum {
+      background-color: #965A38; }
+    .pricing-tables.pt-row .pt-header .pt-price, .pt.pt-row .pt-header .pt-price {
+      text-transform: uppercase;
+      font-weight: 100;
+      padding: 16px 0;
+      margin: 0; }
+  .pricing-tables.pt-row .pt-name, .pt.pt-row .pt-name {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 2px 0 0; }
+  .pricing-tables.pt-row:hover .pt-header, .pt.pt-row:hover .pt-header {
+    background-size: 110%; }
+  .pricing-tables.pt-row hr, .pt.pt-row hr {
+    margin-top: 25px;
+    border-top: 1px solid #ccc; }
+  .pricing-tables.pt-row ul, .pt.pt-row ul {
+    padding: 10px 10px 0; }
+    .pricing-tables.pt-row ul li, .pt.pt-row ul li {
+      padding: 8px 0;
+      list-style-type: none;
+      font-size: 16px; }
+  .pricing-tables.pt-row .pt-btn, .pt.pt-row .pt-btn {
+    border-radius: 3px;
+    border: 2px solid #aaa;
+    min-width: 70%;
+    display: table;
+    margin: 7px auto;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    float: right; }
+    .pricing-tables.pt-row .pt-btn:hover, .pt.pt-row .pt-btn:hover {
+      background: #aaa;
+      color: white; }
 .pricing-tables.pt-chart, .pt.pt-chart {
   background-color: #fff;
   border: 1px solid #ccc;

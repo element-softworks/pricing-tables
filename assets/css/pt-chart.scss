@@ -1,0 +1,58 @@
+&.pt-chart {
+	> div {
+		padding: 0;
+		margin: -1px;
+
+		.list-group {
+			margin-bottom: 0;
+			.list-group-item {
+				border-radius: 0;
+				padding: 17px;
+			}
+		}
+
+	}
+
+	.pt-price {
+		text-transform: uppercase;
+		font-weight: bold;
+		padding: 20px 0;
+		opacity: 0.8;
+		color: #777;
+
+		b {
+			font-weight: bold;
+			font-size: 40px;
+			display: block;
+			color: #222;
+		}
+	}
+
+	background-color: #fff;
+	border: 1px solid #ccc;
+	margin: 40px 0;
+
+	.pt-name, .pt-price, .pt-tag {
+		text-align: center;
+		font-weight: 100;
+	}
+
+	.pt-name {
+		border-radius: 15px;
+		padding: 5px 15px;
+		text-align: center;
+		font-size: 12px;
+	}
+
+
+	.pt-btn {
+		border-radius: 3px;
+		border: 1px solid #aaa;
+		min-width: 70%;
+		display: table;
+		margin: 10px auto;
+		padding: 10px 5px;
+		text-transform: uppercase;
+		font-size: 10px
+	}
+}
