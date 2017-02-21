@@ -4,7 +4,8 @@ $green: #1cbd9e;
 $purple: #5e6a9a;
 
 body {
-	padding: 50px 0;
+	padding: 50px 0 0;
+	min-width: 320px;
 	background: #f3f3f3;
 	color: #555;
 	font-family: 'Open Sans', sans-serif;
@@ -15,6 +16,12 @@ h1.title {
 	text-align: center;
 }
 
+.footer {
+    color: white;
+	h3 {
+		margin: 5px 0;
+	}
+}
 .bg {
 	padding: 40px 0;
 	&.bg-grey {
@@ -90,6 +97,11 @@ h1.title {
 .cp-purple-hover:hover {
 	background: $purple !important;
 	color: white !important;
+	&.color-bg {
+		background: white !important;
+		color: $purple !important;
+		border-color: $purple !important;
+	}
 }
 
 
@@ -128,6 +140,37 @@ h1.title {
 	}
 }
 
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    #color-picker {
+	    top: -3px;
+	    position: fixed;
+	    width: 104%;
+	    height: inherit;
+	    padding: 0;
+	    opacity: 1;
+	    border-bottom: 3px solid #111;
+
+	    span {
+		    font-weight: bold;
+		    line-height: 33px;
+		    left: 0;
+	    }
+	    .cp {
+		    margin: 4px 5px -1px;
+	    }
+    }
+
+	.footer {
+		h3 {
+			font-size: 15px;
+			margin-top: 0;
+		}
+		p {
+			font-size: 11px;
+		}
+	}
+}
 
 
 

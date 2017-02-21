@@ -1,6 +1,6 @@
 <?php require_once("assets/header.php"); ?>
 <div class="row">
-	<div class="col-md-4">
+	<div class="col-md-4 col-sm-6 col-xs-12">
 		<div class="pt pt-simple">
 			<div class="pt-name">Junior</div>
 			<h4 class="pt-price">
@@ -16,7 +16,7 @@
 			<div class="btn pt-btn color-border color-text color-bg-hover">Sign Up</div>
 		</div>
 	</div>
-	<div class="col-md-4">
+	<div class="col-md-4 col-sm-6 col-xs-12">
 		<div class="pt pt-simple">
 			<div class="pt-name color-text">Regular</div>
 			<h4 class="pt-price">
@@ -32,7 +32,7 @@
 			<div class="btn pt-btn color-bg color-border color-bg-hover">Sign Up</div>
 		</div>
 	</div>
-	<div class="col-md-4">
+	<div class="col-md-4 col-sm-6 col-xs-12 col-sm-offset-3 col-md-offset-0 col-xs-offset-0">
 		<div class="pt pt-simple">
 			<div class="pt-name">Senior</div>
 			<h4 class="pt-price">

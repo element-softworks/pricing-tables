@@ -2,6 +2,7 @@
 	> div {
 		padding: 0;
 		margin: -1px;
+		margin-bottom: 20px;
 
 		.list-group {
 			margin-bottom: 0;
@@ -28,8 +29,8 @@
 		}
 	}
 
-	background-color: #fff;
-	border: 1px solid #ccc;
+	background-color: transparent;
+	border: transparent;
 	margin: 40px 0;
 
 	.pt-name, .pt-price, .pt-tag {
