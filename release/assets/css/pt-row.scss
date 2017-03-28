@@ -5,44 +5,50 @@
 	transition: all 0.3s ease-in-out;
 }
 
-.pt-card {
+.pt-row {
 	background-color: #fff;
-	margin: 40px 0;
-	padding: 0 0 1px;
+	border: 1px solid #ddd;
+	margin: 5px 0;
+	padding: 20px;
+	border-radius: 5px;
 
 	.pt-header {
 		background-color: #333;
 		color: white;
 		text-align: center;
-		font-weight: 100;
-		padding: 40px;
+		border-radius: 100px;
+		margin: 0 auto;
+		width: 60px;
+		height: 60px;
 
-		&.pt-header-bike {
-			background: url("../img/bike.png") center;
-			background-size: 100%;
+		&.pt-header-bronze {
+			background-color: #965A38;
 		}
-		&.pt-header-quad {
-			background: url("../img/quad.png") center;
-			background-size: 100%;
+		&.pt-header-silver {
+			background-color: #A8A8A8;
 		}
-		&.pt-header-motorbike {
-			background: url("../img/motorbike.png") center;
-			background-size: 100%;
+		&.pt-header-gold {
+			background-color: #D9A441;
 		}
-
+		&.pt-header-platinum {
+			background-color: #965A38;
+		}
 		@extend .animate;
 
-		.pt-name {
-			font-size: 52px;
-		}
 		.pt-price {
 			text-transform: uppercase;
+			font-weight: 100;
+			padding: 16px 0;
 			margin: 0;
-			font-weight: bold;
 		}
 	}
+
+	.pt-name {
+		text-transform: uppercase;
+		font-weight: bold;
+		margin: 2px 0 0;
+	}
 	&:hover {
-		border: 20px;
 		.pt-header {
 			background-size: 110%;
 		}
@@ -55,7 +61,7 @@
 	}
 
 	ul {
-		padding: 40px 55px 0;;
+		padding: 10px 10px 0;
 		li {
 			padding: 8px 0;
 			list-style-type: none;
@@ -65,13 +71,14 @@
 
 	.pt-btn {
 		border-radius: 3px;
-		border: 3px solid #aaa;
+		border: 2px solid #aaa;
 		min-width: 70%;
 		display: table;
-		margin: 40px auto;
-		padding: 15px 20px;
+		margin: 7px auto;
+		padding: 10px 20px;
 		text-transform: uppercase;
 		font-weight: bold;
+		float: right;
 
 		@extend .animate;
 
@@ -80,16 +87,5 @@
 			color: white;
 		}
 
-	}
-
-
-	@media only screen and (max-width : 1200px) {
-		.pt-header {
-			padding: 27px 0;
-
-			.pt-name {
-				font-size: 45px;
-			}
-		}
 	}
 }

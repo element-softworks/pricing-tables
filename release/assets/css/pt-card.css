@@ -1,0 +1,96 @@
+.animate, .pt-card .pt-header, .pt-card .pt-btn, .animate:hover, .pt-card .pt-header:hover, .pt-card .pt-btn:hover, .animate:focus, .pt-card .pt-header:focus, .pt-card .pt-btn:focus, .animate:active, .pt-card .pt-header:active, .pt-card .pt-btn:active {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.pt-card {
+	background-color: #fff;
+	margin: 40px 0;
+	padding: 0 0 1px;
+}
+
+.pt-card .pt-header {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	font-weight: 100;
+	padding: 40px;
+}
+
+.pt-card .pt-header.pt-header-bike {
+	background: url("../img/bike.png") center;
+	background-size: 100%;
+}
+
+.pt-card .pt-header.pt-header-quad {
+	background: url("../img/quad.png") center;
+	background-size: 100%;
+}
+
+.pt-card .pt-header.pt-header-motorbike {
+	background: url("../img/motorbike.png") center;
+	background-size: 100%;
+}
+
+.pt-card .pt-header .pt-name {
+	font-size: 52px;
+}
+
+.pt-card .pt-header .pt-price {
+	text-transform: uppercase;
+	margin: 0;
+	font-weight: bold;
+}
+
+.pt-card:hover {
+	border: 20px;
+}
+
+.pt-card:hover .pt-header {
+	background-size: 110%;
+}
+
+.pt-card hr {
+	margin-top: 25px;
+	border-top: 1px solid #ccc;
+}
+
+.pt-card ul {
+	padding: 40px 55px 0;
+}
+
+.pt-card ul li {
+	padding: 8px 0;
+	list-style-type: none;
+	font-size: 16px;
+}
+
+.pt-card .pt-btn {
+	border-radius: 3px;
+	border: 3px solid #aaa;
+	min-width: 70%;
+	display: table;
+	margin: 40px auto;
+	padding: 15px 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.pt-card .pt-btn:hover {
+	background: #aaa;
+	color: white;
+}
+
+@media only screen and (max-width: 1200px) {
+	.pt-card .pt-header {
+		padding: 27px 0;
+	}
+
+	.pt-card .pt-header .pt-name {
+		font-size: 45px;
+	}
+}
+
+/*# sourceMappingURL=pt-card.css.map */

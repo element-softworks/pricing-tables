@@ -1,0 +1,68 @@
+.animate, .pt-minimal *[class*='pt-fade'], .animate:hover, .pt-minimal [class*='pt-fade']:hover, .animate:focus, .pt-minimal [class*='pt-fade']:focus, .animate:active, .pt-minimal [class*='pt-fade']:active {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.pt-minimal {
+	margin: 40px 0;
+}
+
+.pt-minimal .pt-name, .pt-minimal .pt-price, .pt-minimal .pt-tag {
+	text-align: center;
+	font-weight: 100;
+}
+
+.pt-minimal .pt-tag {
+	padding: 10px 0;
+	font-size: 50px;
+}
+
+.pt-minimal .pt-name {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.pt-minimal .pt-price {
+	text-transform: uppercase;
+	font-weight: bold;
+	padding: 20px 0;
+	opacity: 0.8;
+	color: #777;
+}
+
+.pt-minimal .pt-price b {
+	font-weight: bold;
+	font-size: 40px;
+	display: block;
+	color: #222;
+}
+
+.pt-minimal ul {
+	padding: 20px 0 0;
+}
+
+.pt-minimal ul li {
+	padding: 12px 0;
+	list-style-type: none;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 100;
+}
+
+.pt-minimal .pt-btn {
+	border-radius: 15px;
+	border: 1px solid #222;
+	background: #222;
+	color: #fff;
+	min-width: 60%;
+	display: table;
+	margin: 30px auto 20px;
+}
+
+.pt-minimal:hover .pt-fade {
+	opacity: 1 !important;
+}
+
+/*# sourceMappingURL=pt-minimal.css.map */

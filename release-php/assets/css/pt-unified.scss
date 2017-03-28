@@ -1,4 +1,4 @@
-.pt-simple {
+&.pt-unified {
 	background-color: #fff;
 	border: 1px solid #ccc;
 	margin: 40px 0;
@@ -10,16 +10,21 @@
 
 	.pt-name {
 		padding-top: 40px;
+		padding-bottom: 20px;
 		font-size: 20px;
 		text-transform: uppercase;
 		font-weight: bold;
 	}
 	.pt-price {
 		text-transform: uppercase;
-		padding: 20px 0;
 		font-weight: bold;
 		opacity: 0.8;
 		color: #777;
+		background: #ddd;
+		margin: auto;
+		display: table;
+		padding: 30px;
+		border-radius: 90px;
 
 		b {
 			color: #222;
@@ -67,4 +72,5 @@
 		text-transform: uppercase;
 		font-weight: bold;
 	}
+
 }

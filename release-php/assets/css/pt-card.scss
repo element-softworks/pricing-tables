@@ -1,11 +1,4 @@
-.animate, .animate:hover, .animate:focus, .animate:active {
-	-webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-
-.pt-card {
+&.pt-card {
 	background-color: #fff;
 	margin: 40px 0;
 	padding: 0 0 1px;

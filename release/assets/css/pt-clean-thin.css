@@ -1,0 +1,83 @@
+.animate, .pt-slim, .pt-slim .pt-btn, .animate:hover, .pt-slim:hover, .pt-slim .pt-btn:hover, .animate:focus, .pt-slim:focus, .pt-slim .pt-btn:focus, .animate:active, .pt-slim:active, .pt-slim .pt-btn:active {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.pt-slim {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 6px;
+	margin: 40px 0;
+}
+
+.pt-slim .pt-name, .pt-slim .pt-price, .pt-slim .pt-tag {
+	text-align: center;
+	font-weight: 100;
+}
+
+.pt-slim .pt-name {
+	padding-top: 20px;
+	font-size: 50px;
+}
+
+.pt-slim .pt-price {
+	font-weight: 400;
+	opacity: 0.6;
+	color: #999;
+}
+
+.pt-slim .pt-price b {
+	color: #222;
+}
+
+.pt-slim .pt-tag {
+	border: 1px solid #aaa;
+	background-color: #fff;
+	border-radius: 15px;
+	padding: 5px 15px;
+	margin: -35px auto 0;
+	display: table;
+	font-size: 12px;
+}
+
+.pt-slim hr {
+	margin-top: 25px;
+	border-top: 1px solid #ccc;
+}
+
+.pt-slim ul {
+	padding-top: 20px;
+}
+
+.pt-slim ul li {
+	padding: 5px 0;
+	list-style-type: none;
+}
+
+.pt-slim ul li:before {
+	font-family: 'Black Tie', sans-serif;
+	font-weight: 200;
+	content: '\f012';
+	margin: 0 5px 0 -15px;
+	color: #111;
+}
+
+.pt-slim .pt-btn {
+	border-radius: 15px;
+	border: 1px solid #aaa;
+	min-width: 80%;
+	display: table;
+	margin: 40px auto 20px;
+}
+
+.pt-slim .pt-btn:hover {
+	background-color: #eee;
+}
+
+.pt-slim:hover {
+	margin-top: 30px;
+}
+
+/*# sourceMappingURL=pt-clean-thin.css.map */

@@ -1,53 +1,118 @@
-/*
-Error: Base-level rules cannot contain the parent-selector-referencing character '&'.
-        on line 1 of pt-unified.scss
+.pt-unified {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	margin: 40px 0;
+}
 
-1: &.pt-unified {
-2: 	background-color: #fff;
-3: 	border: 1px solid #ccc;
-4: 	margin: 40px 0;
-5: 
-6: 	.pt-name, .pt-price, .pt-tag {
+.pt-unified .pt-name, .pt-unified .pt-price, .pt-unified .pt-tag {
+	text-align: center;
+	font-weight: 100;
+}
 
-Backtrace:
-pt-unified.scss:1
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/selector/comma_sequence.rb:29:in `resolve_parent_refs'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin.rb:82:in `update_stylesheets'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:340:in `watch_or_update'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/sass_scss.rb:51:in `process_result'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:52:in `parse'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/exec/base.rb:19:in `parse!'
-C:/Ruby23/lib/ruby/gems/2.3.0/gems/sass-3.4.22/bin/sass:13:in `<top (required)>'
-C:/Ruby23/bin/sass:23:in `load'
-C:/Ruby23/bin/sass:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Base-level rules cannot contain the parent-selector-referencing character '&'.\A         on line 1 of pt-unified.scss\A \A 1: &.pt-unified {\A 2: 	background-color: #fff;\A 3: 	border: 1px solid #ccc;\A 4: 	margin: 40px 0;\A 5: \A 6: 	.pt-name, .pt-price, .pt-tag {"; }
+.pt-unified .pt-name {
+	padding-top: 40px;
+	padding-bottom: 20px;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.pt-unified .pt-price {
+	text-transform: uppercase;
+	font-weight: bold;
+	opacity: 0.8;
+	color: #777;
+	background: #ddd;
+	margin: auto;
+	display: table;
+	padding: 30px;
+	border-radius: 90px;
+}
+
+.pt-unified .pt-price b {
+	color: #222;
+	font-size: 70px;
+	font-weight: 100;
+}
+
+.pt-unified .pt-price i {
+	vertical-align: top;
+	margin-top: 13px;
+	display: inline-block;
+}
+
+.pt-unified .pt-tag {
+	border: 1px solid #aaa;
+	background-color: #fff;
+	border-radius: 15px;
+	padding: 5px 15px;
+	margin: -35px auto 0;
+	display: table;
+	font-size: 12px;
+}
+
+.pt-unified hr {
+	margin-top: 25px;
+	border-top: 1px solid #ccc;
+}
+
+.pt-unified ul {
+	padding: 20px 0 0;
+}
+
+.pt-unified ul li {
+	padding: 8px 0;
+	list-style-type: none;
+	text-align: center;
+	font-size: 16px;
+}
+
+.pt-unified .pt-btn {
+	border-radius: 3px;
+	border: 3px solid #aaa;
+	min-width: 70%;
+	display: table;
+	margin: 40px auto;
+	padding: 15px 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+@media only screen and (min-width: 992px) {
+	.row-unified > div:first-child {
+		padding-left: 30px;
+		padding-right: 0;
+	}
+
+	.row-unified > div:first-child > .pt-unified {
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+		margin-right: -1px;
+	}
+
+	.row-unified > div:nth-child(2) {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.row-unified > div:nth-child(2) > .pt-unified {
+		margin: 10px 0;
+		padding: 10px;
+		border-radius: 10px;
+	}
+
+	.row-unified > div:nth-child(2) > .pt-unified .pt-price {
+		margin: 20px auto;
+	}
+
+	.row-unified > div:last-child {
+		padding-left: 0;
+		padding-right: 30px;
+	}
+
+	.row-unified > div:last-child > .pt-unified {
+		border-top-right-radius: 10px;
+		border-bottom-right-radius: 10px;
+		margin-left: -1px;
+	}
+}

@@ -1,0 +1,91 @@
+.animate, .pt-row .pt-header, .pt-row .pt-btn, .animate:hover, .pt-row .pt-header:hover, .pt-row .pt-btn:hover, .animate:focus, .pt-row .pt-header:focus, .pt-row .pt-btn:focus, .animate:active, .pt-row .pt-header:active, .pt-row .pt-btn:active {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.pt-row {
+	background-color: #fff;
+	border: 1px solid #ddd;
+	margin: 5px 0;
+	padding: 20px;
+	border-radius: 5px;
+}
+
+.pt-row .pt-header {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	border-radius: 100px;
+	margin: 0 auto;
+	width: 60px;
+	height: 60px;
+}
+
+.pt-row .pt-header.pt-header-bronze {
+	background-color: #965A38;
+}
+
+.pt-row .pt-header.pt-header-silver {
+	background-color: #A8A8A8;
+}
+
+.pt-row .pt-header.pt-header-gold {
+	background-color: #D9A441;
+}
+
+.pt-row .pt-header.pt-header-platinum {
+	background-color: #965A38;
+}
+
+.pt-row .pt-header .pt-price {
+	text-transform: uppercase;
+	font-weight: 100;
+	padding: 16px 0;
+	margin: 0;
+}
+
+.pt-row .pt-name {
+	text-transform: uppercase;
+	font-weight: bold;
+	margin: 2px 0 0;
+}
+
+.pt-row:hover .pt-header {
+	background-size: 110%;
+}
+
+.pt-row hr {
+	margin-top: 25px;
+	border-top: 1px solid #ccc;
+}
+
+.pt-row ul {
+	padding: 10px 10px 0;
+}
+
+.pt-row ul li {
+	padding: 8px 0;
+	list-style-type: none;
+	font-size: 16px;
+}
+
+.pt-row .pt-btn {
+	border-radius: 3px;
+	border: 2px solid #aaa;
+	min-width: 70%;
+	display: table;
+	margin: 7px auto;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	float: right;
+}
+
+.pt-row .pt-btn:hover {
+	background: #aaa;
+	color: white;
+}
+
+/*# sourceMappingURL=pt-row.css.map */
