@@ -2,7 +2,7 @@
 $( document ).ready(function() {
 
 	// when a new colour has been selected
-	$(".cp").click(function(){
+	$(".cp").on("click", function(){
 
 		// get the name of the colour. e.g. cp-green
 		var id = $(this).attr('id');
